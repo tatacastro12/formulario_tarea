@@ -1,0 +1,155 @@
+.root {
+  font-family: "Open Sans", sans-serif, arial;
+
+  --button-color: #1f54c5;
+  --button-color-hover: #205bdb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./imagenes/Brick-1540.jpg");
+  margin: 0;
+  padding: 0;
+}
+
+.form-register {
+  max-width: 450px;
+  background-color: #24303c;
+  padding: 30px;
+  margin: 0 auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  color: rgb(250, 244, 244);
+  box-shadow: 7px 13px 37px rgb(17, 1, 1);
+}
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid var(--button-color);
+  font-family: "calibri";
+  font-size: 18px;
+  color: white;
+}
+
+.form-register p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.form-register a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: 300ms ease;
+}
+
+.form-register a:hover {
+  opacity: 0.7;
+}
+
+.form-register a:active {
+  opacity: 1;
+  transition: none;
+}
+
+.form-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.botons {
+  width: 100%;
+  background-color: var(--button-color);
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+  transition: 300ms ease;
+}
+
+.botons:hover {
+  background-color: var(--button-color-hover);
+}
+
+.botons:active {
+  background-color: var(--button-color);
+  transition: none;
+}
+
+.botons:focus {
+  opacity: 0.8;
+}
+
+[type="text"],
+[type="password"],
+[type="email"] {
+  outline: none;
+  transition: 300ms ease;
+}
+
+[type="text"]:focus,
+[type="password"]:focus,
+[type="email"]:focus {
+  border: 1px solid #90b3ff;
+}
+
+button {
+  border-radius: 4px;
+  outline: medium none;
+}
+
+.form-register select {
+  width: 100%;
+  height: 35px;
+  padding: 0 10px;
+  font: inherit;
+}
+
+.pregunta,
+.pregunta ~ div {
+  margin-bottom: 5px;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  transition: 300ms ease;
+}
+
+.radio:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.radio:active {
+  transition: none;
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+.radio label {
+  flex-grow: 1;
+  margin-left: 5px;
+}
+
+hr {
+  border: 0;
+  margin: 20px auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.comentarios{
+  padding: 30px;
+  margin: 10px;
+}

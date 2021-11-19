@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="form-register">
+        <form action="#" method="get" id="form-register">
+            <h4>Formulario Registro</h4>
+
+            <!-- Campos del formulario -->
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre" required="">
+            <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido" required="">
+            <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo" required="">
+            <input class="controls" type="password" name="password" id="pas" placeholder="Ingrese su Contraseña" required="">
+            
+            <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+
+            <!-- Lista de opciones -->
+            <p>¿Qué opción describe mejor su función actual?</p>
+            <select name="funcion-actual" id="funcion-actual" required="">
+                <option value="">Seleccione una opción</option>
+                <option value="1">Estudiante</option>
+                <option value="2">Trabajo a tiempo completo</option>
+                <option value="3">Estudio a tiempo completo</option>
+                <option value="4">Prefiero no decirlo</option>
+                <option value="5">Otro</option>
+            </select>
+
+            <p>¿que  te gustaria estudiar?</p>
+            <select name="funcion-actual" id="funcion-actual" required="">
+                <option value="">musica </option>
+                <option value="1">teatro</option>
+                <option value="2">danza</option>
+                <option value="3">desarollo</option>
+                <option value="4">no quiero estudiar</option>
+                <option value="5">Otro</option>
+            </select>
+
+            <p class="pregunta">¿Qué color le gusta?</p>
+            <div class="radio">
+                <input type="radio" name="color" id="yellow">
+                <label for="yellow">Amarillo</label>
+            </div>
+
+            <div class="radio">
+                <input type="radio" name="color" id="blue">
+                <label for="blue">Azul</label>
+            </div>
+
+            <div class="radio">
+                <input type="radio" name="color" id="red">
+                <label for="red">Rojo</label>
+            </div>
+
+            <!--caja  de texto-->
+
+            <div class="comentarios">
+                <textarea name="comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea>
+            </div>
+
+            <hr>
+
+            <!-- Botón de envío de formulario -->
+            <button type="submit" class="botons" id="reg">
+                Registrar
+            </button>
+
+            <p><a href="#">¿Ya tengo Cuenta?</a></p>
+
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
